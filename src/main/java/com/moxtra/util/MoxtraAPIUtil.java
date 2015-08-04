@@ -773,7 +773,7 @@ public class MoxtraAPIUtil {
                     action = "Atualizou a tarefa ";
                     System.out.println(action + tarefa + ": " + summary);
                 }
-                
+
             } else if (objectType.equals("duedate")) {
                 Calendar calendar = DatatypeConverter.parseDateTime(obj.getString("content"));
                 Date until = calendar.getTime();
@@ -806,8 +806,8 @@ public class MoxtraAPIUtil {
         String client_secret = "qrp1zA_pF5w";
         String login1 = "luiz.taira";
         String login2 = "bart";
-        String partnerLogin = "messaging@fluig.com";
-        String partnerPassword = "Flu1g@M3ssaging@2o15";
+        String partnerLogin = "";
+        String partnerPassword = "";
 
         HashMap<String, Object> map = getAccessToken(client_id, client_secret, login1, "", "", "");
         //String partnerAccessToken = getPartnerAccessToken(client_id, client_secret, partnerLogin, partnerPassword);
